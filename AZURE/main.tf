@@ -17,8 +17,8 @@ module "security" {
   public_ip_address_id = module.vnet.public_subnet
 }
 
-module "eks" {
-  source              = "./module/eks"
+module "aks" {
+  source              = "./module/aks"
   location            = var.location
   resource_group_name = module.storage.resourceall
 }
